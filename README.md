@@ -200,10 +200,10 @@ The team collaborates with the server team to initiate scheduled credential scan
 
 In this phase, an insecure Windows Server is provisioned to simulate the server team's environment. After creating vulnerabilities, an authenticated scan is performed, and the results are exported for future remediation steps.  
 
-<img width="635" height="820" alt="Scan 1" src="https://github.com/user-attachments/assets/0aa36d2a-61ff-43d3-a17e-c5fa3f8fd1c3" />
+<img width="1074" height="736" alt="Screenshot 2026-06-17 at 8 06 15 PM" src="https://github.com/user-attachments/assets/016f8cc7-d2e9-406f-bb2f-363d4096484f" />
 
 
-[Scan 1 - Initial Scan](https://drive.google.com/file/d/1dNyc8T26aokkWXR5LGcn-0iy5C6oPidX/view?usp=sharing)
+[Scan 1 - Initial Scan](https://drive.google.com/file/d/1uJ92Ww9swfZfes9RcnQoHfAFcK5fJ1wf/view?usp=sharing)
 
 
 
