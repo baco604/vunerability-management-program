@@ -342,9 +342,120 @@ Removing Wireshark and fixing the guest account should not be a problem since th
 
 The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.  
 
-<a href="https://www.youtube.com/watch?v=enqOjUV0-7k" target="_"><img width="600" src="https://github.com/user-attachments/assets/07164e63-fbce-471a-b469-29a6d41b7bb8"/></a>
+# Change Advisory Board (CAB) Meeting – Secure Protocol and Cipher Suite Remediation
 
-[Meeting Video](https://www.youtube.com/watch?v=enqOjUV0-7k)
+## Participants
+- **Josh** – Risk Department / Vulnerability Management Lead
+- **Jimmy** – Infrastructure Team Representative
+- **CAB Members** – Change Advisory Board
+
+## Meeting Summary
+
+**CAB Chair:**  
+Next on the agenda are two vulnerability remediation changes for the server team:
+
+1. Removal of insecure protocols  
+2. Removal of insecure cipher suites  
+
+It looks like Josh from the Risk Department is working together with Jimmy from Infrastructure on this effort. Jimmy, would you like to walk us through the technical aspects of the proposed changes?
+
+**Jimmy:**  
+Normally, I would, but would you mind having Josh explain this one? He actually built the solution for us. We're still getting familiar with the process.
+
+**Josh:**  
+Sure, I can explain.
+
+The issue with insecure cipher suites and protocols is that their presence on a system means the system is still capable of negotiating and using outdated cryptographic algorithms or deprecated communication protocols.
+
+For example, if a system connects to another server that only supports those outdated protocols, there is a possibility that the connection could fall back to using weaker encryption methods.
+
+These configurations are controlled through the **Windows Registry**.
+
+The remediation itself is straightforward. We created a **PowerShell script** that:
+
+- Identifies insecure protocols and cipher suites.
+- Disables deprecated encryption protocols and algorithms.
+- Enables approved protocols and cipher suites that align with current security standards.
+
+The goal is to ensure systems only negotiate secure encryption methods.
+
+**CAB Member:**  
+That sounds good. However, what happens if something goes wrong? Do we have a rollback plan in place?
+
+**Josh:**  
+Yes, absolutely.
+
+First, we are using a **tiered deployment approach**:
+
+1. **Pilot Group** – A small set of systems used for initial validation.
+2. **Pre-Production Testing** – Broader testing before deployment.
+3. **Production Deployment** – Full rollout across the environment.
+
+In addition, we developed and tested automated rollback scripts for each remediation.
+
+If any unexpected issues occur, the rollback scripts can restore the original protocols and cipher configurations to return systems to their previous state.
+
+**CAB Member:**  
+That sounds good. Since the fixes are simple registry updates, I don't anticipate major concerns.
+
+**Josh:**  
+Exactly. The technical changes are relatively straightforward, but we still want to follow proper change management procedures and ensure we have testing and rollback capabilities before deployment.
+
+**CAB Chair:**  
+Great. Are there any additional questions?
+
+**CAB Members:**  
+No further questions.
+
+**CAB Chair:**  
+That concludes this week's Change Advisory Board meeting. See everyone next week.
+
+---
+
+# Key Outcomes
+
+- Approved remediation plan for:
+  - Removal of insecure communication protocols.
+  - Removal of insecure cipher suites.
+- A PowerShell-based remediation script was developed to automate configuration changes.
+- The remediation modifies Windows Registry settings to disable deprecated security protocols.
+- A phased deployment strategy was established:
+  - Pilot testing
+  - Pre-production validation
+  - Production rollout
+- Automated rollback scripts were created to restore previous configurations if unexpected issues occur.
+- Change management procedures were followed through the CAB review process.
+
+---
+
+# Technical Concepts Demonstrated
+
+- Change Advisory Board (CAB) Process
+- Vulnerability Remediation
+- Cryptographic Protocol Hardening
+- Cipher Suite Management
+- TLS Security Configuration
+- Windows Registry Administration
+- PowerShell Automation
+- Secure Configuration Management
+- Change Control
+- Rollback Planning
+- Risk Mitigation
+
+---
+
+# Skills Demonstrated
+
+- Security Automation
+- Vulnerability Management
+- Change Management
+- Technical Documentation
+- Risk Assessment
+- Security Engineering
+- Infrastructure Collaboration
+- Incident Prevention
+- Stakeholder Communication
+- Secure Systems Administration
 
 ---
 ### Step 10 ) Remediation Effort
