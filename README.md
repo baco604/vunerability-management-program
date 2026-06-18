@@ -466,7 +466,7 @@ Windows updates were re-enabled and applied until the system was fully up to dat
 
 <img width="483" height="273" alt="Scan 2 - PASSED" src="https://github.com/user-attachments/assets/ce9682e4-f97f-4974-b067-048e111d98da" />
 
-[Scan 2 - Windows OS Updates](https://drive.google.com/file/d/1oJX60-NJ-1xHnc7Es0s4cGOVm6vqxoiR/view?usp=drive_link)
+[Scan 2 - Windows OS Updates](https://drive.google.com/file/d/1lvDPKc9B1KD9-elIPNEYgjJWgQkcML-I/view?usp=sharing)
 
 
 #### Remediation Round 2: Guest Account Group Membership
