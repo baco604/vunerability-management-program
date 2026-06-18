@@ -52,9 +52,53 @@ This phase focuses on drafting a Vulnerability Management Policy as a starting p
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
-<a href='https://www.youtube.com/watch?v=cFDgyuvhBlY' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/549d21f4-26c2-412d-9117-d7b6835aedbf"></a>
+# Vulnerability Remediation Policy Discussion
 
-[YouTube Video: Stakeholder Policy Buy-In Meeting](https://www.youtube.com/watch?v=cFDgyuvhBlY)
+## Participants
+- **Josh** – Security Program Lead
+- **Jimmy** – Department Representative
+
+## Meeting Summary
+
+**Josh:** Good morning, Jimmy. How have things been lately? I know everyone has been pretty busy these past few weeks.
+
+**Jimmy:** Good morning, Josh. It's been a bit hectic, but we're managing. Thanks for asking. I had a chance to review the policy draft, and overall, it makes sense. However, given our current staffing levels, we won't be able to meet the aggressive remediation timelines—especially the 48-hour requirement for critical vulnerabilities.
+
+**Josh:** I completely understand. It is fairly aggressive, particularly as we're getting started. Perhaps we could extend the remediation timeline for critical vulnerabilities to one week. That seems like a reasonable compromise for now, while reserving the 48-hour requirement for truly severe zero-day vulnerabilities.
+
+**Jimmy:** That sounds reasonable. We appreciate the flexibility. Would it also be possible to have some leeway during the initial rollout as we get accustomed to the remediation and patching process over the first few months?
+
+**Josh:** Absolutely. Once the policy is finalized, we'll officially launch the program, but we're planning to give all departments about six months to adjust and become comfortable with the new processes. Does that seem fair?
+
+**Jimmy:** Yes, that sounds fair. We'll do our best. I appreciate you including us in the decision-making process. It really helps us feel like we're part of the solution.
+
+**Josh:** Of course. We're all working toward the same goal. Thanks for collaborating with us.
+
+**Jimmy:** No problem. Thanks for the brief meeting.
+
+**Josh:** Those are my favorite kind. Take care.
+
+**Jimmy:** You too. See you later.
+
+---
+
+## Key Outcomes
+
+- The original **48-hour remediation requirement** for critical vulnerabilities was identified as unrealistic given current staffing constraints.
+- The parties agreed to extend the remediation timeline to **one week** for most critical vulnerabilities.
+- A **48-hour remediation window** will be reserved for severe or actively exploited zero-day vulnerabilities.
+- Departments will be given a **six-month transition period** to adapt to the new remediation and patch management processes.
+- Both parties emphasized the importance of collaboration and stakeholder involvement in policy implementation.
+
+## Skills Demonstrated
+
+- Security Policy Development
+- Stakeholder Management
+- Risk-Based Decision Making
+- Vulnerability Management
+- Negotiation and Consensus Building
+- Change Management
+- Cross-Functional Communication
 
 ---
 
