@@ -475,7 +475,7 @@ The server team removed the guest account from the administrator group. A new sc
 
 <img width="732" height="217" alt="Scan 3 - PASSED" src="https://github.com/user-attachments/assets/06cbcc85-3f5b-45ac-af32-72133d1546f5" />
 
-[Scan 3 - Guest Account Group Removal](https://drive.google.com/file/d/1PFk99NHiRI8HjTdOML1FlXxAJgDYcM1z/view?usp=sharing)
+[Scan 3 - Guest Account Group Removal](https://drive.google.com/file/d/1D41GPEss3LCMzhgDeP0uT0vc1S7eK6RL/view?usp=sharing)
 
 
 #### Remediation Round 3: Outdated Wireshark (Insecure Software)
