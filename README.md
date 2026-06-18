@@ -511,7 +511,7 @@ The LAN Manager authentication level was configured to only allow NTLMv2 respons
 
 <img width="802" height="407" alt="Screenshot 2026-06-17 at 8 30 13 PM" src="https://github.com/user-attachments/assets/4f5684bc-e7d3-4a02-bbd7-b2cfe135d655" />
 
-[Scan 7 - LAN Manager Authentication Remediation](https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto)
+[Scan 7 - LAN Manager Authentication Remediation](https://drive.google.com/file/d/1p8cA3_emITiFheoZSnzi52RDTVB2Az9q/view?usp=sharing)
 
 ---
 
