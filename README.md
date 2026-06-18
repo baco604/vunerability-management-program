@@ -227,7 +227,7 @@ We assessed vulnerabilities and established a remediation prioritization strateg
 
 The server team received remediation scripts and scan reports to address key vulnerabilities. This streamlined their efforts and prepared them for a follow-up review.  
 
-[Remediation Email](https://github.com/joshmadakor1/lognpacific-public/blob/main/misc/remediation-email.md)
+[Remediation Email](https://github.com/baco604/remediation-email/blob/main/README.md)
 
 ---
 
