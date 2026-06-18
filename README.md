@@ -493,25 +493,25 @@ SMB Signing was enabled on the server to enforce message authentication and prev
 
 <img width="754" height="478" alt="Screenshot 2026-06-17 at 8 25 25 PM" src="https://github.com/user-attachments/assets/a094b7e5-a4a0-48de-adbe-7ed9b537be18" />" 
 
-[Scan 5 - SMB Signing Remediation](https://drive.google.com/file/d/141rh9HTfvl3whHV5f5PTTN78e4Lw7ULD/view?usp=drive_link)
+[Scan 5 - SMB Signing Remediation](https://drive.google.com/file/d/1uhoUdnPpvT8dcetkr6rOrb5SYs2dme_g/view?usp=sharing)
 
 
 #### Remediation Round 5: RDP Without Network Level Authentication (NLA)
 
 Network Level Authentication (NLA) was enabled for Remote Desktop connections to require authentication before a session is established. A follow-up scan confirmed successful remediation.  
 
-<img width="785" height="384" alt="Scan 6" src="https://github.com/user-attachments/assets/a2a0e86e-60ca-4342-82db-6696847da3a4" />
+<img width="799" height="492" alt="Screenshot 2026-06-17 at 8 28 42 PM" src="https://github.com/user-attachments/assets/53854856-149a-43b6-8f59-eddd3e4b46c6" />
 
-[Scan 6 - RDP NLA Remediation](https://drive.google.com/file/d/1SLP0PyHgNcaCjeTElQjGpTfCmkjuE509/view?usp=drive_link)
+[Scan 6 - RDP NLA Remediation](https://drive.google.com/file/d/1a8N-Y8s-LW1y4gAv82ZEu5MZ81feCidg/view?usp=sharing)
 
 
 #### Remediation Round 6: Weak LAN Manager Authentication Level
 
 The LAN Manager authentication level was configured to only allow NTLMv2 responses and refuse LM and NTLM. A follow-up scan confirmed successful remediation.  
 
-<img width="782" height="357" alt="Scan 7" src="https://github.com/user-attachments/assets/e98566c1-ff3b-4349-82ed-d2c6f3aafdae" />
+<img width="802" height="407" alt="Screenshot 2026-06-17 at 8 30 13 PM" src="https://github.com/user-attachments/assets/4f5684bc-e7d3-4a02-bbd7-b2cfe135d655" />
 
-[Scan 7 - LAN Manager Authentication Remediation](https://drive.google.com/file/d/1Ra9dBBUSqF0CPm3pGZEO6hq7CEDtLuZc/view?usp=drive_link)
+[Scan 7 - LAN Manager Authentication Remediation](https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto)
 
 ---
 
