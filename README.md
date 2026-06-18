@@ -235,9 +235,106 @@ The server team received remediation scripts and scan reports to address key vul
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB). 
 
-<a href="https://www.youtube.com/watch?v=JqIxiWwDDkA" target="_"><img width="600" src="https://github.com/user-attachments/assets/03027c66-5f7c-42d0-b6dd-09d053c040b1"/></a>
+# Vulnerability Scan Results Review and Remediation Planning Meeting
 
-[Meeting Video](https://www.youtube.com/watch?v=JqIxiWwDDkA)
+## Participants
+- **Josh** – Vulnerability Management Lead
+- **Jimmy** – Infrastructure Team Representative
+
+## Meeting Summary
+
+**Josh:** Good morning, Jimmy. How are you doing?
+
+**Jimmy:** Not bad for a Monday. How about yourself?
+
+**Josh:** I'm still alive, so I can't complain. Before we get into the vulnerability findings, I wanted to check in on the scan itself. How did everything go on your end? Did you experience any outages, performance issues, or resource overutilization?
+
+**Jimmy:** The scan went well. We monitored the environment throughout the process, and aside from seeing the expected increase in open connections, we wouldn't have known a scan was taking place.
+
+**Josh:** That's good news. I expected that we would have minimal impact, but we'll continue monitoring going forward. I don't anticipate any major resource utilization issues. Would you mind if we review the vulnerability findings?
+
+**Jimmy:** Yeah, absolutely.
+
+**Josh:** Great. I'll share my screen.
+
+The majority of the findings appear to be related to **Wireshark installations**. As you can see, several servers have outdated versions installed, which is creating multiple vulnerabilities.
+
+One additional finding that stood out was the **local guest account** on the servers. During further investigation, I found that the guest account is a member of the **local administrators group**, which is a security concern. I'm not sure why that configuration exists.
+
+Some other findings may automatically resolve through standard Windows updates, such as the **Microsoft Edge Chromium vulnerability** and a few other Windows-related issues.
+
+The **self-signed certificate finding** is not a major concern because it appears to be related to the default computer-generated certificate.
+
+However, the findings related to **medium-strength cipher suites** and **TLS 1.0/TLS 1.1** are more important. These protocols and cipher suites are deprecated and should be removed or disabled.
+
+Overall, the main remediation items are:
+- Remove outdated Wireshark installations
+- Remove the guest account from the local administrators group
+- Disable deprecated TLS protocols
+- Remove insecure cipher suites
+- Apply required Windows updates
+
+**Jimmy:** That's very interesting. The good news is that I suspect most of our servers will have the same vulnerabilities. Hopefully, having a consistent set of findings makes remediation easier.
+
+**Josh:** That's actually good news. A uniform environment should make remediation more efficient. Do you anticipate any issues addressing the deprecated cipher suites or insecure protocols?
+
+**Jimmy:** I highly doubt there will be any major issues. We'll run the changes through the next Change Control Board review.
+
+Removing Wireshark and fixing the guest account should not be a problem since those configurations should not exist on production servers anyway. I'll need to coordinate with our server administrators to address those items.
+
+**Josh:** That sounds good. I'll start building remediation packages to make the process easier when it's time to implement the fixes.
+
+**Jimmy:** That would be great. I also wanted to ask: do you already have a process in place for addressing Windows update-related vulnerabilities? Do you have patch management implemented?
+
+**Josh:** Yes, we do. I'm not concerned about those findings because Windows updates are already handled through our patch management process. The updates should be applied automatically by next week.
+
+**Jimmy:** Excellent. I'll begin researching the best remediation approaches for these findings and will follow up before the next Change Control Board meeting.
+
+**Josh:** Sounds good. Talk to you soon.
+
+**Jimmy:** Talk to you soon.
+
+---
+
+## Key Outcomes
+
+- The credentialed vulnerability scan completed successfully with minimal impact on server performance.
+- No outages or significant resource utilization issues were observed during scanning.
+- Several recurring vulnerabilities were identified across the server environment.
+- Primary remediation tasks were identified:
+  - Upgrade or remove outdated Wireshark installations.
+  - Remove unnecessary local administrator privileges from the guest account.
+  - Disable deprecated TLS 1.0 and TLS 1.1 protocols.
+  - Remove weak or insecure cipher suites.
+  - Apply outstanding Windows updates through existing patch management processes.
+- The infrastructure team confirmed that most servers share similar configurations, which should simplify remediation efforts.
+- Changes involving cipher suites and protocols will go through the Change Control Board process.
+- Remediation packages will be developed to streamline implementation.
+
+## Technical Concepts Demonstrated
+
+- Vulnerability Assessment Review
+- Credentialed Security Scanning
+- Vulnerability Remediation Planning
+- Patch Management
+- TLS Protocol Hardening
+- Cipher Suite Management
+- Active Directory and Local Account Security
+- Least Privilege Principle
+- Change Management Processes
+- Security Operations Collaboration
+
+## Skills Demonstrated
+
+- Vulnerability Analysis
+- Risk Prioritization
+- Security Reporting
+- Stakeholder Communication
+- Remediation Strategy Development
+- Infrastructure Security Assessment
+- Cross-Functional Collaboration
+- Change Control Coordination
+- Security Governance
 
 ---
 
