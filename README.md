@@ -484,14 +484,14 @@ The server team used a PowerShell script to remove outdated Wireshark. A follow-
 
 <img width="768" height="464" alt="Scan 4 " src="https://github.com/user-attachments/assets/ca0dc272-0107-4169-bec3-0722ada6cb2a" />
 
-[Scan 4 - Third Party Software Removal](https://drive.google.com/file/d/1Kxuu94vrOjxUg877kuc7emvRpebxbwu2/view?usp=sharing)
+[Scan 4 - Third Party Software Removal](https://drive.google.com/file/d/1IrZiz6PdiG5XysBIF3xbxysKXCNwaiy1/view?usp=sharing)
 
 
 #### Remediation Round 4: Disable SMB Signing
 
 SMB Signing was enabled on the server to enforce message authentication and prevent man-in-the-middle attacks. A follow-up scan confirmed successful remediation.  
 
-<img width="772" height="418" alt="Scan 5" src="https://github.com/user-attachments/assets/3ff7d567-76d3-4f48-9add-b95608dd5b74" />
+<img width="754" height="478" alt="Screenshot 2026-06-17 at 8 25 25 PM" src="https://github.com/user-attachments/assets/a094b7e5-a4a0-48de-adbe-7ed9b537be18" />" 
 
 [Scan 5 - SMB Signing Remediation](https://drive.google.com/file/d/141rh9HTfvl3whHV5f5PTTN78e4Lw7ULD/view?usp=drive_link)
 
