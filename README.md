@@ -517,11 +517,11 @@ The LAN Manager authentication level was configured to only allow NTLMv2 respons
 
 ### First Cycle Remediation Effort Summary
 
-The remediation process reduced total vulnerabilities by 81%, from 26 to 5. Critical vulnerabilities were fully resolved (100%), and high vulnerabilities dropped from 8 to 1 (88% reduction). Medium vulnerabilities were reduced from 15 to 3 (80% reduction). The remaining vulnerabilities (SQLite, Microsoft Edge, SSL certificates, and ICMP Timestamp) will be addressed in the next remediation cycle. In an actual production environment, asset criticality would further guide future remediation efforts.
+The remediation process reduced total vulnerabilities by 81%, from 24 to 6. Critical vulnerabilities were fully resolved (100%), and high vulnerabilities dropped from 9 to 1 (88% reduction). Medium vulnerabilities were reduced from 12 to 4 (80% reduction). The remaining vulnerabilities (SQLite, Microsoft Edge, SSL certificates, and ICMP Timestamp) will be addressed in the next remediation cycle. In an actual production environment, asset criticality would further guide future remediation efforts.
 
-<img width="623" height="388" alt="image" src="https://github.com/user-attachments/assets/da9d11ee-8447-43b3-870a-7e6f696b3b8e" />
+<img width="607" height="377" alt="Screenshot 2026-06-17 at 8 37 43 PM" src="https://github.com/user-attachments/assets/cdb54a5b-f2a2-47f8-bcf0-9f428eed0cee" />
 
-[Remediation Data](https://docs.google.com/spreadsheets/d/1FTtFfZYmFsNLU6pm8nTzsKyKE-d2ftXzX_DPwcnFNfA/edit?gid=0#gid=0)
+[Remediation Data](https://docs.google.com/spreadsheets/d/1JVjv1pgeeG4OfaNBgREHkcUCTRMOUz6AMdaE88tRa50/edit?usp=sharing)
 
 ---
 
