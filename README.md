@@ -116,9 +116,83 @@ After gathering feedback from the server team, the policy is revised, addressing
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
 
-<a href='https://www.youtube.com/watch?v=ZEw1ZCOlvHY' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/31fe8d0f-636b-475b-8d5a-a2795c183f86"></a>
+# Credentialed Vulnerability Scanning Planning Meeting
 
-[YouTube Video: Initial Discovery Scan](https://www.youtube.com/watch?v=ZEw1ZCOlvHY)
+## Participants
+- **Josh** – Vulnerability Management Lead
+- **Jimmy** – Infrastructure Team Representative
+
+## Meeting Summary
+
+**Josh:** Good morning, Jimmy.
+
+**Jimmy:** Good morning. I heard you're ready to conduct some scans.
+
+**Josh:** Yep. Now that our vulnerability management policy is in place, I wanted to get started with scheduled credentialed scans of your environment.
+
+**Jimmy:** Sounds good to me. What's involved? How can we help?
+
+**Josh:** We're planning to schedule weekly scans of the server infrastructure. We estimate it will take about four to six hours to scan all 200 assets. We'll need administrative credentials that allow the scanning engine to remotely authenticate to the systems so it can perform a more comprehensive assessment.
+
+**Jimmy:** Hold on a second. What does the scanning process actually entail? I'm concerned about resource utilization. Also, you're asking for administrative credentials to all 200 machines? That doesn't sound very safe.
+
+**Josh:** Those are valid concerns. The scan engine sends various types of traffic to the servers to identify vulnerabilities. This includes checking system configurations, reviewing registry settings, identifying outdated software, and detecting insecure protocols or cipher suites. That's why authenticated access is required.
+
+**Jimmy:** I see. As long as the scans don't impact performance or take servers offline, I think we'll be okay.
+
+**Josh:** Absolutely. Let's start by scanning a single server and monitor resource utilization throughout the process.
+
+**Jimmy:** That's a good idea.
+
+**Josh:** Great. Regarding credentials, could your team create a dedicated Active Directory service account for scanning? The account could remain disabled until scan windows begin, then be enabled temporarily and disabled or deprovisioned afterward. Essentially, a just-in-time access model.
+
+**Jimmy:** That sounds reasonable. I'll ask Susan to begin working on the account provisioning automation.
+
+**Josh:** Excellent. Let's reconnect once everything is ready.
+
+**Jimmy:** Sounds good. I'll get back to you once the credentials are set up.
+
+**Josh:** Perfect. Talk soon.
+
+**Jimmy:** See you later.
+
+**Josh:** See you later.
+
+---
+
+## Key Outcomes
+
+- Agreed to begin a credentialed vulnerability scanning program.
+- Weekly scans will be conducted across approximately 200 server assets.
+- Initial concerns regarding performance impact and security of administrative credentials were discussed and addressed.
+- A pilot scan will be performed on a single server before expanding to the full environment.
+- The infrastructure team will create a dedicated Active Directory scanning account.
+- The scanning account will follow a **Just-in-Time (JIT) access** model, remaining disabled when not in use.
+- Automation will be explored for account provisioning and deprovisioning.
+
+## Technical Concepts Demonstrated
+
+- Credentialed Vulnerability Scanning
+- Vulnerability Management Program Implementation
+- Active Directory Administration
+- Just-in-Time (JIT) Access
+- Principle of Least Privilege
+- Server Infrastructure Security
+- Secure Credential Management
+- Vulnerability Assessment Methodologies
+- Risk Mitigation
+- Security Operations Collaboration
+
+## Skills Demonstrated
+
+- Stakeholder Communication
+- Security Program Rollout
+- Risk Assessment
+- Technical Explanation for Non-Security Teams
+- Change Management
+- Cross-Functional Collaboration
+- Security Governance
+- Problem Solving
 
 ---
 
