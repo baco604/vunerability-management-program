@@ -1,4 +1,4 @@
-# Official Vunerability Remediation Project
+# Official Vulnerability Remediation Project
 
 # Vulnerability Management Program Implementation
 
